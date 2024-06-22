@@ -1,2 +1,2 @@
-# WepProj1
+# WebProj1
 Color Switcher
