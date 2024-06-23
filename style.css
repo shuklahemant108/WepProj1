@@ -1,31 +1,52 @@
+/* Container Styles */
 .container {
   text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 90%;
 }
-h1,
-p {
+
+/* Heading and Paragraph Styles */
+h1, p {
   text-align: center;
+  margin: 10px 0;
 }
 p {
-  font-size: 30px;
+  font-size: 1.5em; /* Use relative units for better responsiveness */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+/* Color Container Styles */
 .colorcont {
-  margin: 150px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
 }
+
+/* Button Styles */
 .button {
-  padding: 50px;
+  padding: 20px; /* Reduce padding for better responsiveness */
   border: 2px solid black;
-  margin: 2px;
+  margin: 5px;
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
 }
-#white {
-  background-color: white;
-}
-#grey {
-  background-color: grey;
-}
-#yellow {
-  background-color: yellow;
-}
-#green {
-  background-color: green;
+
+/* Background Colors */
+#white { background-color: white; }
+#grey { background-color: grey; }
+#yellow { background-color: yellow; }
+#green { background-color: green; }
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 600px) {
+  .button {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  p {
+    font-size: 1.2em;
+  }
 }
